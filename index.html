@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alima Kussainova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --beige: #e9dfd2;
+    --black: #121212;
+    --white: #ffffff;
+    --pink: #f2a1c0;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "DM Sans", Arial, sans-serif; background: var(--beige); color: var(--black); line-height: 1.65; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 22px; }
+
+  .top { background: var(--black); color: var(--white); }
+  nav { display: flex; justify-content: flex-end; gap: 22px; padding: 18px 0; }
+  nav a { text-decoration: none; font-weight: 500; }
+  nav a:hover { color: var(--pink); }
+
+  .hero { padding: 40px 0 72px; }
+  h1 { font-family: "Bodoni Moda", Georgia, serif; font-weight: 700; font-size: clamp(2.8rem, 12vw, 6.5rem); line-height: 1; }
+  h1 span { display: inline-block; background: var(--pink); color: var(--black); padding: 0 .15em; margin-top: .08em; }
+  .tagline { margin-top: 26px; max-width: 34ch; font-size: 1.2rem; color: #d9d3cb; }
+
+  section { padding: 56px 0; }
+  h2 { font-family: "Bodoni Moda", Georgia, serif; font-weight: 500; font-size: 2rem; margin-bottom: 18px; }
+  .about p { max-width: 62ch; }
+  .about p + p { margin-top: 12px; }
+
+  .things { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .card { background: var(--white); padding: 22px; border-top: 6px solid var(--black); }
+  .card:nth-child(2) { border-top-color: var(--pink); }
+  .card h3 { font-size: 1.1rem; margin-bottom: 4px; }
+  .card .when { font-size: .9rem; color: #5d574f; margin-bottom: 8px; }
+
+  .edu { background: var(--white); }
+  .edu ul { list-style: none; padding: 0; border-left: 4px solid var(--pink); }
+  .edu li { padding: 6px 0 6px 18px; }
+  .edu li strong { display: block; }
+
+  .interests { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+  .interests li { padding: 6px 16px; border: 2px solid var(--black); border-radius: 999px; font-weight: 500; }
+
+  .contact { background: var(--black); color: var(--white); }
+  .contact a { color: var(--pink); font-weight: 700; font-size: 1.2rem; }
+
+  footer { background: var(--black); color: #9b958d; padding: 0 0 22px; font-size: .9rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#doing">What I do</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+      <h1>Alima<br><span>Kussainova</span></h1>
+      <p class="tagline">Finance student at KIMEP and vice president of Global Shapers.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I study finance at KIMEP University. Before that, I graduated from Lyceum 134. I like student life: I try to be involved in projects and communities, and not only attend classes.</p>
+      <p>In summer 2026 I worked as an intern at Tech Garden. Outside of studying, I go to the gym and enjoy meeting new people.</p>
+    </div>
+  </section>
+
+  <section id="doing" style="padding-top:0">
+    <div class="wrap">
+      <h2>What I do</h2>
+      <div class="things">
+        <article class="card">
+          <h3>Vice President, Global Shapers</h3>
+          <p class="when">World Economic Forum community</p>
+          <p>I help lead a group of young people who work on projects for their community.</p>
+        </article>
+        <article class="card">
+          <h3>Intern at Tech Garden</h3>
+          <p class="when">Summer 2026</p>
+          <p>My first work experience in the tech and startup environment.</p>
+        </article>
+        <article class="card">
+          <h3>Active student at KIMEP</h3>
+          <p class="when">Finance program</p>
+          <p>I take part in student events and activities alongside my studies.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu">
+    <div class="wrap">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>KIMEP University</strong>Finance, currently studying</li>
+        <li><strong>Lyceum 134</strong>Graduated</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Interests</h2>
+      <ul class="interests">
+        <li>Finance</li>
+        <li>Gym</li>
+        <li>Student life</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Write to me: <a href="mailto:a.kussainova@kimep.kz">a.kussainova@kimep.kz</a></p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Alima Kussainova</div></footer>
+</body>
+</html>
